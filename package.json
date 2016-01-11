@@ -6,10 +6,10 @@
   "scripts": {
     "build": "babel src -d dist && cp src/index.html dist",
     "start": "electron ./dist/main.js",
-    "release:osx": "electron-packager ./ Qiita --out ~/Desktop/Qiita --platform=darwin --arch=x64 --version=0.36.2 --overwrite --asar",
-    "release:win": "electron-packager ./ Qiita --out ~/Desktop/Qiita --platform=win32 --arch=x64 --version=0.36.2 --overwrite --asar",
-    "release:win32bit": "electron-packager ./ Qiita --out ~/Desktop/Qiita --platform=win32 --arch=ia32 --version=0.36.2 --overwrite --asar",
-    "release:linux": "electron-packager ./ Qiita --out ~/Desktop/Qiita --platform=linux --arch=x64 --version=0.36.2 --overwrite --asar"
+    "release:osx": "electron-packager ./ Qiita --out release --platform=darwin --arch=x64 --version=0.36.2 --overwrite --asar --ignore release",
+    "release:win": "electron-packager ./ Qiita --out release --platform=win32 --arch=x64 --version=0.36.2 --overwrite --asar --ignore release",
+    "release:win32bit": "electron-packager ./ Qiita --out release --platform=win32 --arch=ia32 --version=0.36.2 --overwrite --asar --ignore release",
+    "release:linux": "electron-packager ./ Qiita --out release --platform=linux --arch=x64 --version=0.36.2 --overwrite --asar --ignore release"
   },
   "keywords": [],
   "author": "",

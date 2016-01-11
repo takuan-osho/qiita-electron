@@ -149,6 +149,7 @@ tmtags
 ## Build generated
 build/
 dist/
+release/
 DerivedData
 
 ## Various settings
